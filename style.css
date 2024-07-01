@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: aquamarine;
+}
+button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: #495057;
+  cursor: pointer;
+  font-size: 25px;
+  box-shadow: 0 0 10px rgb(0, 94, 255);
+}
+#btn {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  gap: 70px;
+  row-gap: 5px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 60px;
+}
+#display {
+  width: 33rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #495057;
+  color: white;
+  border: none;
+  height: 5rem;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+#color {
+  background-color: black;
+  height: 100vh;
+  /* max-width: 480px; */
+  overflow: hidden;
+  /* margin-left: 25rem;
+  margin-top: 10px; */
+  border-radius: 20px;
+  border: 1px solid;
+}
+#change {
+  background-color: #ff922b;
+}
+#extra {
+  background-color: #22b8cf;
+}
+#change:hover {
+  background-color: #ffa94d;
+}
+#change:active {
+  background-color: #ffc078;
+}
+button:hover {
+  background-color: #343a40;
+}
+button:active {
+  background-color: #495057;
+}
+#extra:hover {
+  background-color: #3bc9db;
+}
+#extra:active {
+  background-color: #66d9e8;
+}
+@media (max-width: 520px) {
+  #color {
+    width: 300px;
+  }
+  button {
+    width: 3rem;
+    height: 3rem;
+  }
+  #btn {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    gap: 30px;
+    row-gap: 5px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 302px) {
+  #color {
+    width: 270px;
+  }
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #btn {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    gap: 30px;
+    row-gap: 5px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
