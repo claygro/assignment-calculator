@@ -48,15 +48,13 @@ input {
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
+  height: 100vh;
   align-items: center;
 }
 #color {
   background-color: black;
-  height: 100vh;
-  /* max-width: 480px; */
   overflow: hidden;
-  /* margin-left: 25rem;
-  margin-top: 10px; */
+  padding-bottom: 20px;
   border-radius: 20px;
   border: 1px solid;
 }
@@ -86,7 +84,7 @@ button:active {
 }
 @media (max-width: 520px) {
   #color {
-    width: 300px;
+    width: 400px;
   }
   button {
     width: 3rem;
@@ -97,7 +95,6 @@ button:active {
     grid-template-columns: 40px 40px 40px 40px;
     gap: 30px;
     row-gap: 5px;
-    margin-top: 50px;
     justify-content: center;
     align-items: center;
   }
